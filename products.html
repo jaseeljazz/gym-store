@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all gym equipment · IRON & PULSE</title>
+  <meta name="description" content="Browse racks, dumbbells, barbells, cardio machines and recovery gear. Filter by price, load capacity, brand and rating.">
+  <meta name="theme-color" content="#ffffff">
+  <script>try{var t=localStorage.getItem('ip-theme-v2');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+      <p class="mb-0 text-truncate announce-text"><i class="bi bi-truck me-2" aria-hidden="true"></i>Free shipping on orders over $150. <a href="products.html">Shop equipment</a></p>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <a href="#" class="d-none d-md-inline">Help</a>
+        <label class="visually-hidden" for="currency-top">Currency</label>
+        <select id="currency-top" class="form-select form-select-sm" data-currency>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="QAR">QAR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / navigation -->
+  <nav class="navbar navbar-expand-lg ip-nav sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="IRON &amp; PULSE home">
+        <span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE
+      </a>
+
+      <div class="d-flex align-items-center gap-1 order-lg-3 ms-auto ms-lg-0">
+        <button class="icon-btn d-none d-sm-inline-grid" type="button" data-theme-toggle aria-label="Switch theme"><i class="bi bi-sun"></i></button>
+        <a class="icon-btn d-none d-sm-inline-grid" href="#" aria-label="Wishlist" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Wishlist">
+          <i class="bi bi-heart"></i><span class="count-badge" data-wish-count data-empty="true">0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="Cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
+          <i class="bi bi-bag"></i><span class="count-badge" data-cart-count data-empty="true">0</span>
+        </a>
+        <div class="dropdown d-none d-sm-block">
+          <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu"><i class="bi bi-person-circle"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><h6 class="dropdown-header">Signed in as Alex Rivera</h6></li>
+            <li><a class="dropdown-item" href="order-success.html"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+        <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="products.html">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=racks"><i class="bi bi-grid-3x3 me-2"></i>Racks &amp; Rigs</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=dumbbells"><i class="bi bi-hexagon me-2"></i>Dumbbells &amp; Barbells</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=cardio"><i class="bi bi-heart-pulse me-2"></i>Cardio Equipment</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=benches"><i class="bi bi-layout-sidebar me-2"></i>Benches</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=recovery"><i class="bi bi-bandaid me-2"></i>Recovery &amp; Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All equipment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#commercial">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        </ul>
+        <form class="nav-search me-lg-3 mb-3 mb-lg-0" role="search" data-search>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="site-search">Search equipment</label>
+          <input id="site-search" class="form-control" type="search" placeholder="Search racks, bars, bikes…" autocomplete="off">
+        </form>
+        <div class="d-flex gap-2 d-sm-none pb-3">
+          <button class="btn btn-ip-ghost btn-sm" type="button" data-theme-toggle><i class="bi bi-sun"></i></button>
+          <a class="btn btn-ip-ghost btn-sm flex-grow-1" href="#"><i class="bi bi-person-circle me-1"></i>Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Banner -->
+    <section class="page-banner" aria-labelledby="shop-title">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Shop</li>
+          </ol>
+        </nav>
+        <h1 id="shop-title">Shop All Gym Equipment</h1>
+        <p class="text-muted mb-3">Every item is load-tested to commercial standards and ships with a 5-year frame warranty.</p>
+        <div class="filter-tags" id="activeTags" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Filters -->
+          <div class="col-lg-3">
+            <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="filterPanel" aria-labelledby="filterTitle">
+              <div class="offcanvas-header border-bottom">
+                <h2 class="offcanvas-title h5" id="filterTitle">Filters</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#filterPanel" aria-label="Close filters"></button>
+              </div>
+              <div class="offcanvas-body d-block">
+                <form class="filters w-100" id="filterForm" aria-label="Product filters">
+                  <div class="filter-group">
+                    <h3>Category</h3>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cat" value="racks" id="c-racks"><label class="form-check-label" for="c-racks">Racks &amp; Rigs <span class="count" data-count="cat:racks"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cat" value="dumbbells" id="c-db"><label class="form-check-label" for="c-db">Dumbbells &amp; Barbells <span class="count" data-count="cat:dumbbells"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cat" value="cardio" id="c-cardio"><label class="form-check-label" for="c-cardio">Cardio Equipment <span class="count" data-count="cat:cardio"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cat" value="benches" id="c-bench"><label class="form-check-label" for="c-bench">Benches <span class="count" data-count="cat:benches"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cat" value="recovery" id="c-rec"><label class="form-check-label" for="c-rec">Recovery &amp; Accessories <span class="count" data-count="cat:recovery"></span></label></div>
+                  </div>
+
+                  <div class="filter-group">
+                    <h3><label for="priceRange" class="m-0">Price range</label></h3>
+                    <div class="d-flex justify-content-between align-items-baseline mb-2">
+                      <span class="text-muted small">Up to</span>
+                      <output class="range-out" id="priceOut" for="priceRange">$3,500.00</output>
+                    </div>
+                    <input type="range" class="form-range" id="priceRange" name="max" min="50" max="3500" step="50" value="3500">
+                    <div class="d-flex justify-content-between small text-muted"><span data-price="50">$50</span><span data-price="3500">$3,500</span></div>
+                  </div>
+
+                  <div class="filter-group">
+                    <h3>Weight / load capacity</h3>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cap" value="light" id="cap-1"><label class="form-check-label" for="cap-1">Up to 300 lb <span class="count" data-count="cap:light"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cap" value="mid" id="cap-2"><label class="form-check-label" for="cap-2">300–700 lb <span class="count" data-count="cap:mid"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="cap" value="heavy" id="cap-3"><label class="form-check-label" for="cap-3">700 lb and up <span class="count" data-count="cap:heavy"></span></label></div>
+                  </div>
+
+                  <div class="filter-group">
+                    <h3>Brand</h3>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="brand" value="Ironforge" id="b-1"><label class="form-check-label" for="b-1">Ironforge <span class="count" data-count="brand:Ironforge"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="brand" value="Kodiak" id="b-2"><label class="form-check-label" for="b-2">Kodiak <span class="count" data-count="brand:Kodiak"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="brand" value="PulseFit" id="b-3"><label class="form-check-label" for="b-3">PulseFit <span class="count" data-count="brand:PulseFit"></span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="brand" value="Vanta" id="b-4"><label class="form-check-label" for="b-4">Vanta <span class="count" data-count="brand:Vanta"></span></label></div>
+                  </div>
+
+                  <div class="filter-group">
+                    <h3>Customer rating</h3>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="rating" value="4.8" id="r-1"><label class="form-check-label" for="r-1"><span><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span> 4.8 &amp; up</span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="rating" value="4.5" id="r-2"><label class="form-check-label" for="r-2"><span><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span> 4.5 &amp; up</span></label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" name="rating" value="4" id="r-3"><label class="form-check-label" for="r-3"><span><span class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i></span> 4.0 &amp; up</span></label></div>
+                  </div>
+
+                  <div class="pt-4 d-grid gap-2">
+                    <button class="btn btn-ip-ghost" type="button" id="clearFilters"><i class="bi bi-x-circle me-2"></i>Clear filters</button>
+                    <button class="btn btn-ip d-lg-none" type="button" data-bs-dismiss="offcanvas" data-bs-target="#filterPanel">Show <span data-result-count>12</span> results</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div class="col-lg-9">
+            <div class="toolbar">
+              <div class="d-flex align-items-center gap-2">
+                <button class="btn btn-ip-ghost btn-sm d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#filterPanel" aria-controls="filterPanel">
+                  <i class="bi bi-sliders me-1"></i>Filters <span class="tag tag-accent ms-1 d-none" id="filterCount">0</span>
+                </button>
+                <p class="mb-0 small" id="resultSummary" aria-live="polite">Showing 12 products</p>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <label for="sortBy" class="small text-muted text-nowrap">Sort by</label>
+                <select id="sortBy" class="form-select form-select-sm">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="newest">Newest</option>
+                  <option value="rating">Top rated</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row g-2 g-sm-3 g-lg-4 row-cols-2 row-cols-xl-3" id="productGrid"></div>
+
+            <div class="empty-state d-none" id="emptyState">
+              <i class="bi bi-search"></i>
+              <h2 class="h4 mt-3">No equipment matches these filters</h2>
+              <p class="text-muted mx-auto">Raise the price limit or remove a filter to see more results.</p>
+              <button class="btn btn-ip" type="button" data-clear>Clear all filters</button>
+            </div>
+
+            <nav class="mt-5" aria-label="Product pages">
+              <ul class="pagination justify-content-center" id="pager"></ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="brand mb-3" href="index.html"><span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE</a>
+          <p class="text-muted mb-4">Commercial-grade strength and cardio equipment for home gyms, garages and training facilities. Designed in Austin, built to outlast you.</p>
+          <div class="social d-flex gap-2">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html?cat=racks">Racks &amp; Rigs</a></li>
+            <li><a href="products.html?cat=dumbbells">Dumbbells &amp; Barbells</a></li>
+            <li><a href="products.html?cat=cardio">Cardio</a></li>
+            <li><a href="products.html?cat=recovery">Recovery</a></li>
+            <li><a href="products.html">All equipment</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="order-success.html">Track an order</a></li>
+            <li><a href="#">Shipping &amp; delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Warranty claims</a></li>
+            <li><a href="#">Assembly service</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="index.html#commercial">Commercial sales</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Talk to us</h4>
+          <ul>
+            <li><a href="tel:+18005550199"><i class="bi bi-telephone me-2"></i>1-800-555-0199</a></li>
+            <li><a href="mailto:hello@ironandpulse.com"><i class="bi bi-envelope me-2"></i>Email support</a></li>
+            <li class="text-muted small">Mon–Sat, 8am–8pm CT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <span>© <span data-year>2026</span> IRON &amp; PULSE Inc. All rights reserved. · <a href="#" class="text-muted">Privacy</a> · <a href="#" class="text-muted">Terms</a></span>
+        <div class="d-flex flex-wrap gap-2" aria-label="Accepted payment methods">
+          <span class="pay-chip">VISA</span>
+          <span class="pay-chip">MC</span>
+          <span class="pay-chip">AMEX</span>
+          <span class="pay-chip"><i class="bi bi-paypal"></i>PayPal</span>
+          <span class="pay-chip"><i class="bi bi-apple"></i>Pay</span>
+          <span class="pay-chip"><i class="bi bi-google"></i>Pay</span>
+          <span class="pay-chip">Klarna</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile dock -->
+  <nav class="mobile-dock d-lg-none" aria-label="Quick navigation">
+    <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
+    <a href="products.html" class="active" aria-current="page"><i class="bi bi-grid"></i><span>Shop</span></a>
+    <a href="#"><i class="bi bi-heart"></i><span>Wishlist</span><span class="count-badge" data-wish-count data-empty="true">0</span></a>
+    <a href="cart.html"><i class="bi bi-bag"></i><span>Cart</span><span class="count-badge" data-cart-count data-empty="true">0</span></a>
+    <a href="order-success.html"><i class="bi bi-person"></i><span>Account</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const PER_PAGE = 9;
+      const form = document.getElementById('filterForm');
+      const grid = document.getElementById('productGrid');
+      const tags = document.getElementById('activeTags');
+      const pager = document.getElementById('pager');
+      const range = document.getElementById('priceRange');
+      const priceOut = document.getElementById('priceOut');
+      const sortBy = document.getElementById('sortBy');
+      const empty = document.getElementById('emptyState');
+      const summary = document.getElementById('resultSummary');
+      const filterCount = document.getElementById('filterCount');
+      const params = new URLSearchParams(location.search);
+      let query = (params.get('q') || '').trim();
+      let page = 1;
+
+      const capBucket = (p) => p.capLbs === 0 ? null : p.capLbs < 300 ? 'light' : p.capLbs < 700 ? 'mid' : 'heavy';
+      const capLabels = { light: 'Up to 300 lb', mid: '300–700 lb', heavy: '700 lb and up' };
+
+      // Preselect category from URL
+      const catParam = params.get('cat');
+      if (catParam) {
+        const box = form.querySelector(`input[name="cat"][value="${CSS.escape(catParam)}"]`);
+        if (box) box.checked = true;
+      }
+      if (query) document.getElementById('site-search').value = query;
+
+      // Facet counts
+      document.querySelectorAll('[data-count]').forEach((el) => {
+        const [k, v] = el.getAttribute('data-count').split(':');
+        const n = IP.PRODUCTS.filter((p) => k === 'cat' ? p.category === v : k === 'brand' ? p.brand === v : capBucket(p) === v).length;
+        el.textContent = n;
+      });
+
+      function state() {
+        const checked = (name) => Array.from(form.querySelectorAll(`input[name="${name}"]:checked`)).map((i) => i.value);
+        const ratings = checked('rating').map(Number);
+        return {
+          cats: checked('cat'),
+          caps: checked('cap'),
+          brands: checked('brand'),
+          minRating: ratings.length ? Math.min.apply(null, ratings) : 0,
+          max: Number(range.value),
+          sort: sortBy.value
+        };
+      }
+
+      function filtered(s) {
+        let list = IP.PRODUCTS.filter((p) =>
+          (!s.cats.length || s.cats.includes(p.category)) &&
+          (!s.caps.length || s.caps.includes(capBucket(p))) &&
+          (!s.brands.length || s.brands.includes(p.brand)) &&
+          p.rating >= s.minRating &&
+          p.price <= s.max &&
+          (!query || (p.name + ' ' + p.brand + ' ' + IP.CATEGORIES[p.category]).toLowerCase().includes(query.toLowerCase()))
+        );
+        const sorters = {
+          'price-asc': (a, b) => a.price - b.price,
+          'price-desc': (a, b) => b.price - a.price,
+          newest: (a, b) => b.added - a.added,
+          rating: (a, b) => b.rating - a.rating || b.reviews - a.reviews
+        };
+        if (sorters[s.sort]) list = list.slice().sort(sorters[s.sort]);
+        return list;
+      }
+
+      function renderTags(s) {
+        const chips = [];
+        if (query) chips.push({ label: `“${query}”`, clear: () => { query = ''; document.getElementById('site-search').value = ''; } });
+        s.cats.forEach((c) => chips.push({ label: IP.CATEGORIES[c], clear: () => uncheck('cat', c) }));
+        s.caps.forEach((c) => chips.push({ label: capLabels[c], clear: () => uncheck('cap', c) }));
+        s.brands.forEach((b) => chips.push({ label: b, clear: () => uncheck('brand', b) }));
+        if (s.minRating) chips.push({ label: `${s.minRating}★ & up`, clear: () => form.querySelectorAll('input[name="rating"]').forEach((i) => { i.checked = false; }) });
+        if (s.max < Number(range.max)) chips.push({ label: `Under ${IP.fmt(s.max)}`, clear: () => { range.value = range.max; } });
+
+        tags.innerHTML = '';
+        if (!chips.length) {
+          tags.innerHTML = '<span class="text-muted small"><i class="bi bi-funnel me-1"></i>No filters applied. Showing every item in stock.</span>';
+        } else {
+          tags.insertAdjacentHTML('beforeend', '<span class="small text-muted me-1">Active filters:</span>');
+          chips.forEach((c) => {
+            const b = document.createElement('button');
+            b.type = 'button';
+            b.className = 'filter-chip';
+            b.setAttribute('aria-label', 'Remove filter ' + c.label);
+            b.innerHTML = `${IP.escapeHtml(c.label)}<i class="bi bi-x" aria-hidden="true"></i>`;
+            b.addEventListener('click', () => { c.clear(); page = 1; render(); });
+            tags.appendChild(b);
+          });
+          const clr = document.createElement('button');
+          clr.type = 'button';
+          clr.className = 'btn btn-link btn-sm text-accent p-0 ms-2';
+          clr.textContent = 'Clear all';
+          clr.addEventListener('click', clearAll);
+          tags.appendChild(clr);
+        }
+        const n = chips.length;
+        filterCount.textContent = n;
+        filterCount.classList.toggle('d-none', n === 0);
+      }
+
+      function uncheck(name, value) {
+        const i = form.querySelector(`input[name="${name}"][value="${CSS.escape(value)}"]`);
+        if (i) i.checked = false;
+      }
+
+      function renderPager(total) {
+        const pages = Math.max(1, Math.ceil(total / PER_PAGE));
+        pager.innerHTML = '';
+        if (total === 0) return;
+        const item = (label, target, opts) => {
+          const li = document.createElement('li');
+          li.className = 'page-item' + (opts.active ? ' active' : '') + (opts.disabled ? ' disabled' : '');
+          const a = document.createElement('a');
+          a.className = 'page-link';
+          a.href = '#main';
+          a.innerHTML = label;
+          if (opts.aria) a.setAttribute('aria-label', opts.aria);
+          if (opts.active) a.setAttribute('aria-current', 'page');
+          if (opts.disabled) a.setAttribute('tabindex', '-1');
+          a.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (opts.disabled || opts.active) return;
+            page = target;
+            render();
+            document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
+          });
+          li.appendChild(a);
+          pager.appendChild(li);
+        };
+        item('<i class="bi bi-chevron-left"></i>', page - 1, { disabled: page === 1, aria: 'Previous page' });
+        for (let i = 1; i <= pages; i++) item(String(i), i, { active: i === page });
+        item('<i class="bi bi-chevron-right"></i>', page + 1, { disabled: page === pages, aria: 'Next page' });
+      }
+
+      function render() {
+        const s = state();
+        priceOut.textContent = IP.fmt(s.max);
+        const list = filtered(s);
+        const pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
+        if (page > pages) page = pages;
+        const start = (page - 1) * PER_PAGE;
+        const slice = list.slice(start, start + PER_PAGE);
+
+        grid.innerHTML = slice.map((p) => `<div class="col">${IP.productCard(p)}</div>`).join('');
+        empty.classList.toggle('d-none', list.length !== 0);
+        summary.innerHTML = list.length
+          ? `Showing <strong>${start + 1}–${start + slice.length}</strong> of <strong>${list.length}</strong> products`
+          : 'No products found';
+        document.querySelectorAll('[data-result-count]').forEach((el) => { el.textContent = list.length; });
+        renderTags(s);
+        renderPager(list.length);
+        document.dispatchEvent(new CustomEvent('ip:rendered'));
+      }
+
+      function clearAll() {
+        form.querySelectorAll('input[type="checkbox"]').forEach((i) => { i.checked = false; });
+        range.value = range.max;
+        query = '';
+        document.getElementById('site-search').value = '';
+        sortBy.value = 'featured';
+        page = 1;
+        history.replaceState(null, '', 'products.html');
+        render();
+      }
+
+      form.addEventListener('change', () => { page = 1; render(); });
+      range.addEventListener('input', () => { page = 1; render(); });
+      sortBy.addEventListener('change', () => { page = 1; render(); });
+      document.getElementById('clearFilters').addEventListener('click', clearAll);
+      document.querySelector('[data-clear]').addEventListener('click', clearAll);
+      document.addEventListener('ip:currency', render);
+
+      // Search on this page filters in place
+      const searchForm = document.querySelector('[data-search]');
+      searchForm.removeAttribute('data-search');
+      searchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        query = document.getElementById('site-search').value.trim();
+        page = 1;
+        render();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IRON & PULSE · Commercial-grade home gym equipment</title>
+  <meta name="description" content="Power racks, dumbbells, barbells and cardio built to commercial standards. Free shipping over $150 and a 5-year warranty.">
+  <meta name="theme-color" content="#ffffff">
+  <script>try{var t=localStorage.getItem('ip-theme-v2');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+      <p class="mb-0 text-truncate announce-text"><i class="bi bi-truck me-2" aria-hidden="true"></i>Free shipping on orders over $150. <a href="products.html">Shop equipment</a></p>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <a href="#" class="d-none d-md-inline">Help</a>
+        <label class="visually-hidden" for="currency-top">Currency</label>
+        <select id="currency-top" class="form-select form-select-sm" data-currency>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="QAR">QAR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / navigation -->
+  <nav class="navbar navbar-expand-lg ip-nav sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="IRON &amp; PULSE home">
+        <span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE
+      </a>
+
+      <div class="d-flex align-items-center gap-1 order-lg-3 ms-auto ms-lg-0">
+        <button class="icon-btn d-none d-sm-inline-grid" type="button" data-theme-toggle aria-label="Switch theme"><i class="bi bi-sun"></i></button>
+        <a class="icon-btn d-none d-sm-inline-grid" href="#" aria-label="Wishlist" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Wishlist">
+          <i class="bi bi-heart"></i><span class="count-badge" data-wish-count data-empty="true">0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="Cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
+          <i class="bi bi-bag"></i><span class="count-badge" data-cart-count data-empty="true">0</span>
+        </a>
+        <div class="dropdown d-none d-sm-block">
+          <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu"><i class="bi bi-person-circle"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><h6 class="dropdown-header">Signed in as Alex Rivera</h6></li>
+            <li><a class="dropdown-item" href="order-success.html"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+        <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=racks"><i class="bi bi-grid-3x3 me-2"></i>Racks &amp; Rigs</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=dumbbells"><i class="bi bi-hexagon me-2"></i>Dumbbells &amp; Barbells</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=cardio"><i class="bi bi-heart-pulse me-2"></i>Cardio Equipment</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=benches"><i class="bi bi-layout-sidebar me-2"></i>Benches</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=recovery"><i class="bi bi-bandaid me-2"></i>Recovery &amp; Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All equipment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#commercial">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        </ul>
+        <form class="nav-search me-lg-3 mb-3 mb-lg-0" role="search" data-search>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="site-search">Search equipment</label>
+          <input id="site-search" class="form-control" type="search" placeholder="Search racks, bars, bikes…" autocomplete="off">
+        </form>
+        <div class="d-flex gap-2 d-sm-none pb-3">
+          <button class="btn btn-ip-ghost btn-sm" type="button" data-theme-toggle><i class="bi bi-sun"></i></button>
+          <a class="btn btn-ip-ghost btn-sm flex-grow-1" href="#"><i class="bi bi-person-circle me-1"></i>Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" data-bs-theme="dark" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=60" srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=640&q=60 640w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=60 1200w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=55 1800w" sizes="100vw" decoding="async" alt="Dark home gym with a loaded barbell and rack of dumbbells" fetchpriority="high">
+      </div>
+      <div class="container hero-inner">
+        <h1 class="hero-title" id="hero-title">
+          <span class="line"><span>Build your</span></span>
+          <span class="line"><span>unstoppable</span></span>
+          <span class="line"><span>home gym</span></span>
+        </h1>
+        <p class="hero-copy">Racks, bars and cardio built to the same spec as the gyms we supply, delivered next day and assembled by our crew if you want it.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="products.html" class="btn btn-ip btn-lg"><i class="bi bi-bag me-2"></i>Shop equipment</a>
+          <a href="#bundles" class="btn btn-ip-ghost btn-lg">Explore bundles</a>
+        </div>
+        <div class="hero-proof">
+          <span><i class="bi bi-star-fill"></i><strong>4.9</strong> from 12,400 reviews</span>
+          <span><i class="bi bi-shield-check"></i><strong>5-year</strong> frame warranty</span>
+          <span><i class="bi bi-truck"></i>Next-day delivery in <strong>40+ metros</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured categories -->
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="cat-title">Shop by training style</h2>
+            <p>Start with the station that matters most, then build around it.</p>
+          </div>
+          <a href="products.html" class="fw-semibold text-accent">See all categories</a>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-tile" href="products.html?cat=racks">
+            <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Power rack with barbell loaded on J-hooks" loading="lazy">
+            <div class="cat-body">
+              <div><h3>Heavy Racks</h3><p>Power racks, half racks and cable rigs rated to 1,000 lb</p></div>
+              <span class="cat-go" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="cat-tile" href="products.html?cat=dumbbells">
+            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Row of hex dumbbells on a rack" loading="lazy">
+            <div class="cat-body">
+              <div><h3>Dumbbells &amp; Barbells</h3><p>Adjustables, Olympic bars, plates</p></div>
+              <span class="cat-go" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="cat-tile" href="products.html?cat=cardio">
+            <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Row of treadmills and bikes in a gym" loading="lazy">
+            <div class="cat-body">
+              <div><h3>Cardio Equipment</h3><p>Air bikes, rowers, treadmills</p></div>
+              <span class="cat-go" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="cat-tile" href="products.html?cat=recovery">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Athlete stretching on a mat with a foam roller" loading="lazy">
+            <div class="cat-body">
+              <div><h3>Recovery &amp; Accessories</h3><p>Massage guns, mobility kits, flooring and storage</p></div>
+              <span class="cat-go" aria-hidden="true"><i class="bi bi-arrow-up-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top sellers -->
+    <section class="section pt-0" aria-labelledby="top-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="top-title">Top sellers this month</h2>
+            <p>The gear our customers reorder for their second and third stations.</p>
+          </div>
+          <a href="products.html" class="fw-semibold text-accent">Shop all equipment</a>
+        </div>
+        <div class="row g-2 g-sm-3 g-lg-4">
+          <div class="col-6 col-lg-3">
+            <article class="p-card">
+              <div class="p-media">
+                <div class="p-badges"><span class="tag tag-accent">Best Seller</span></div>
+                <button class="p-wish" type="button" data-wish="titan-db" data-name="Titan Adjustable Dumbbell Set" aria-label="Save Titan Adjustable Dumbbell Set to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+                <a href="product-detail.html?id=titan-db" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Titan Adjustable Dumbbell Set" loading="lazy" width="600" height="600"></a>
+                <div class="p-overlay">
+                  <button class="btn btn-ip" type="button" data-add-to-cart="titan-db"><i class="bi bi-bag-plus me-1"></i>Quick add</button>
+                  <a class="btn btn-ip-ghost" href="product-detail.html?id=titan-db" aria-label="View Titan Adjustable Dumbbell Set"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="p-body">
+                <span class="p-brand">Ironforge · Dumbbells</span>
+                <h3 class="p-title"><a href="product-detail.html?id=titan-db">Titan Adjustable Dumbbell Set</a></h3>
+                <div class="rating-line"><span class="stars" role="img" aria-label="Rated 4.9 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>4.9 (1,284)</span></div>
+                <span class="p-load"><i class="bi bi-speedometer2"></i>5–50 lb per handle</span>
+                <div class="p-foot">
+                  <span class="p-price" data-price="499">$499.00</span>
+                  <button class="p-add" type="button" data-add-to-cart="titan-db" aria-label="Add Titan Adjustable Dumbbell Set to cart"><i class="bi bi-plus-lg"></i></button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="p-card">
+              <div class="p-media">
+                <div class="p-badges"><span class="tag tag-hot">15% OFF</span></div>
+                <button class="p-wish" type="button" data-wish="apex-rack" data-name="Apex PR-3000 Power Rack" aria-label="Save Apex PR-3000 Power Rack to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+                <a href="product-detail.html?id=apex-rack" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Apex PR-3000 Power Rack" loading="lazy" width="600" height="600"></a>
+                <div class="p-overlay">
+                  <button class="btn btn-ip" type="button" data-add-to-cart="apex-rack"><i class="bi bi-bag-plus me-1"></i>Quick add</button>
+                  <a class="btn btn-ip-ghost" href="product-detail.html?id=apex-rack" aria-label="View Apex PR-3000 Power Rack"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="p-body">
+                <span class="p-brand">Kodiak · Racks &amp; Rigs</span>
+                <h3 class="p-title"><a href="product-detail.html?id=apex-rack">Apex PR-3000 Power Rack</a></h3>
+                <div class="rating-line"><span class="stars" role="img" aria-label="Rated 4.8 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>4.8 (642)</span></div>
+                <span class="p-load"><i class="bi bi-speedometer2"></i>Rated to 1,000 lb</span>
+                <div class="p-foot">
+                  <div><span class="p-price" data-price="1299">$1,299.00</span><span class="p-old" data-price="1529">$1,529.00</span></div>
+                  <button class="p-add" type="button" data-add-to-cart="apex-rack" aria-label="Add Apex PR-3000 Power Rack to cart"><i class="bi bi-plus-lg"></i></button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="p-card">
+              <div class="p-media">
+                <div class="p-badges"><span class="tag tag-glass">New</span></div>
+                <button class="p-wish" type="button" data-wish="air-bike" data-name="Assault Air Bike X1" aria-label="Save Assault Air Bike X1 to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+                <a href="product-detail.html?id=air-bike" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Assault Air Bike X1" loading="lazy" width="600" height="600"></a>
+                <div class="p-overlay">
+                  <button class="btn btn-ip" type="button" data-add-to-cart="air-bike"><i class="bi bi-bag-plus me-1"></i>Quick add</button>
+                  <a class="btn btn-ip-ghost" href="product-detail.html?id=air-bike" aria-label="View Assault Air Bike X1"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="p-body">
+                <span class="p-brand">PulseFit · Cardio</span>
+                <h3 class="p-title"><a href="product-detail.html?id=air-bike">Assault Air Bike X1</a></h3>
+                <div class="rating-line"><span class="stars" role="img" aria-label="Rated 4.8 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>4.8 (501)</span></div>
+                <span class="p-load"><i class="bi bi-speedometer2"></i>User max 350 lb</span>
+                <div class="p-foot">
+                  <span class="p-price" data-price="899">$899.00</span>
+                  <button class="p-add" type="button" data-add-to-cart="air-bike" aria-label="Add Assault Air Bike X1 to cart"><i class="bi bi-plus-lg"></i></button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="p-card">
+              <div class="p-media">
+                <div class="p-badges"><span class="tag tag-accent">Best Seller</span></div>
+                <button class="p-wish" type="button" data-wish="fid-bench" data-name="Adjustable FID Bench" aria-label="Save Adjustable FID Bench to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+                <a href="product-detail.html?id=fid-bench" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Adjustable FID Bench" loading="lazy" width="600" height="600"></a>
+                <div class="p-overlay">
+                  <button class="btn btn-ip" type="button" data-add-to-cart="fid-bench"><i class="bi bi-bag-plus me-1"></i>Quick add</button>
+                  <a class="btn btn-ip-ghost" href="product-detail.html?id=fid-bench" aria-label="View Adjustable FID Bench"><i class="bi bi-eye"></i></a>
+                </div>
+              </div>
+              <div class="p-body">
+                <span class="p-brand">Ironforge · Benches</span>
+                <h3 class="p-title"><a href="product-detail.html?id=fid-bench">Adjustable FID Bench</a></h3>
+                <div class="rating-line"><span class="stars" role="img" aria-label="Rated 4.8 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><span>4.8 (1,033)</span></div>
+                <span class="p-load"><i class="bi bi-speedometer2"></i>Rated to 1,000 lb</span>
+                <div class="p-foot">
+                  <span class="p-price" data-price="349">$349.00</span>
+                  <button class="p-add" type="button" data-add-to-cart="fid-bench" aria-label="Add Adjustable FID Bench to cart"><i class="bi bi-plus-lg"></i></button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="why section-tight" id="commercial" aria-labelledby="why-title">
+      <div class="container">
+        <div class="row g-4 align-items-end mb-4 mb-xl-5">
+          <div class="col-lg-6"><h2 id="why-title" class="mb-0">Built for gyms. Priced for your garage.</h2></div>
+          <div class="col-lg-6"><p class="text-muted mb-0">We supply 600+ commercial facilities, so every rack, bench and bike in our catalog meets the same load and fatigue testing, whether it ships to a CrossFit box or your spare room.</p></div>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-icon"><i class="bi bi-buildings"></i></span>
+            <div><h3>Commercial grade</h3><p>11-gauge steel uprights, laser-cut hardware and powder coat tested for 10 years of daily use.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon"><i class="bi bi-shield-check"></i></span>
+            <div><h3>5-year warranty</h3><p>Frames, welds and cables are covered for five years. Claims are approved in 48 hours.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon"><i class="bi bi-truck"></i></span>
+            <div><h3>Next-day delivery</h3><p>Order before 2pm for next-day delivery in 40+ metros, with free curbside shipping over $150.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-icon"><i class="bi bi-tools"></i></span>
+            <div><h3>Assembly support</h3><p>Book white-glove setup at checkout, or call our build line for a live walkthrough.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bundles teaser -->
+    <section class="section" id="bundles" aria-labelledby="bundle-title">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="ip-card overflow-hidden" style="aspect-ratio:4/3">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=60" srcset="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=60 400w, https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=60 800w" sizes="(max-width: 575px) 50vw, (max-width: 991px) 50vw, 25vw" decoding="async" alt="Home gym with rack, bench and plates arranged in a garage" class="w-100 h-100" style="object-fit:cover" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-5">
+            <h2 id="bundle-title">The garage starter bundle</h2>
+            <p class="lead">A power rack, FID bench, 20 kg bar and 260 lb of bumpers. Everything you need for squat, bench and deadlift in one delivery.</p>
+            <ul class="feature-list my-4">
+              <li><i class="bi bi-check2-circle"></i><span>Fits under an 8 ft ceiling with room for pull-ups</span></li>
+              <li><i class="bi bi-check2-circle"></i><span>Save $420 compared with buying each piece</span></li>
+              <li><i class="bi bi-check2-circle"></i><span>Free assembly when you book delivery this month</span></li>
+            </ul>
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <span class="pd-price" data-price="2266">$2,266.00</span>
+              <span class="p-old fs-6" data-price="2686">$2,686.00</span>
+              <a href="products.html?cat=racks" class="btn btn-ip ms-sm-auto">Build my bundle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section pt-0" aria-labelledby="t-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 id="t-title">From people who lift at home</h2>
+            <p>4.9 average from 12,400 verified purchases.</p>
+          </div>
+          <div class="slider-btns">
+            <button class="slider-btn" type="button" data-scroll-target="#tTrack" data-dir="-1" aria-label="Previous reviews"><i class="bi bi-chevron-left"></i></button>
+            <button class="slider-btn" type="button" data-scroll-target="#tTrack" data-dir="1" aria-label="Next reviews"><i class="bi bi-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="t-track" id="tTrack" tabindex="0" aria-label="Customer reviews">
+          <figure class="t-card m-0">
+            <span class="stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+            <blockquote>“The PR-3000 doesn't move an inch when I rack a 405 squat. Delivery crew had it bolted down in under an hour.”</blockquote>
+            <span class="t-product">Apex PR-3000 Power Rack</span>
+            <figcaption class="t-person">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=96&q=60" width="44" height="44" decoding="async" alt="" loading="lazy">
+              <div><strong>Marcus T.</strong><span>Verified buyer, Denver</span></div>
+            </figcaption>
+          </figure>
+          <figure class="t-card m-0">
+            <span class="stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+            <blockquote>“I replaced fifteen pairs of dumbbells with the Titan set. Weight changes take two seconds and the dial never slips.”</blockquote>
+            <span class="t-product">Titan Adjustable Dumbbell Set</span>
+            <figcaption class="t-person">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=96&q=60" width="44" height="44" decoding="async" alt="" loading="lazy">
+              <div><strong>Priya K.</strong><span>Verified buyer, Seattle</span></div>
+            </figcaption>
+          </figure>
+          <figure class="t-card m-0">
+            <span class="stars" role="img" aria-label="Rated 4.5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></span>
+            <blockquote>“We outfitted our studio with eight air bikes. Two years of 6am classes and not a single warranty call.”</blockquote>
+            <span class="t-product">Assault Air Bike X1</span>
+            <figcaption class="t-person">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&q=60" width="44" height="44" decoding="async" alt="" loading="lazy">
+              <div><strong>Daniel O.</strong><span>Studio owner, Atlanta</span></div>
+            </figcaption>
+          </figure>
+          <figure class="t-card m-0">
+            <span class="stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+            <blockquote>“The bench is rock solid at every angle and the pad grip is perfect. Support answered my assembly question in minutes.”</blockquote>
+            <span class="t-product">Adjustable FID Bench</span>
+            <figcaption class="t-person">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=96&q=60" width="44" height="44" decoding="async" alt="" loading="lazy">
+              <div><strong>Sofia R.</strong><span>Verified buyer, Miami</span></div>
+            </figcaption>
+          </figure>
+          <figure class="t-card m-0">
+            <span class="stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+            <blockquote>“Knurling on the 20 kg bar is aggressive without tearing hands. Spins smooth, no rattle. Best bar I've owned.”</blockquote>
+            <span class="t-product">Olympic Barbell 20 kg</span>
+            <figcaption class="t-person">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=96&q=60" width="44" height="44" decoding="async" alt="" loading="lazy">
+              <div><strong>James L.</strong><span>Verified buyer, Chicago</span></div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section pt-0" aria-labelledby="nl-title">
+      <div class="container">
+        <div class="newsletter">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-4">
+              <div class="offer-chip">10% off</div>
+              <p class="text-muted mb-0 mt-2">your first order</p>
+            </div>
+            <div class="col-lg-8">
+              <h2 id="nl-title" class="h3 mb-2">Get programming tips and first access to restocks</h2>
+              <p class="text-muted mb-4">One email a week. Unsubscribe in one click.</p>
+              <form class="newsletter-form" data-newsletter novalidate>
+                <label class="visually-hidden" for="nl-email">Email address</label>
+                <input id="nl-email" class="form-control form-control-lg" type="email" placeholder="you@example.com" autocomplete="email" required>
+                <button class="btn btn-ip btn-lg" type="submit">Get my code</button>
+              </form>
+              <div class="promo-msg" data-newsletter-msg aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="brand mb-3" href="index.html"><span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE</a>
+          <p class="text-muted mb-4">Commercial-grade strength and cardio equipment for home gyms, garages and training facilities. Designed in Austin, built to outlast you.</p>
+          <div class="social d-flex gap-2">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html?cat=racks">Racks &amp; Rigs</a></li>
+            <li><a href="products.html?cat=dumbbells">Dumbbells &amp; Barbells</a></li>
+            <li><a href="products.html?cat=cardio">Cardio</a></li>
+            <li><a href="products.html?cat=recovery">Recovery</a></li>
+            <li><a href="products.html">All equipment</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="order-success.html">Track an order</a></li>
+            <li><a href="#">Shipping &amp; delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Warranty claims</a></li>
+            <li><a href="#">Assembly service</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="index.html#commercial">Commercial sales</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Talk to us</h4>
+          <ul>
+            <li><a href="tel:+18005550199"><i class="bi bi-telephone me-2"></i>1-800-555-0199</a></li>
+            <li><a href="mailto:hello@ironandpulse.com"><i class="bi bi-envelope me-2"></i>Email support</a></li>
+            <li class="text-muted small">Mon–Sat, 8am–8pm CT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <span>© <span data-year>2026</span> IRON &amp; PULSE Inc. All rights reserved. · <a href="#" class="text-muted">Privacy</a> · <a href="#" class="text-muted">Terms</a></span>
+        <div class="d-flex flex-wrap gap-2" aria-label="Accepted payment methods">
+          <span class="pay-chip">VISA</span>
+          <span class="pay-chip">MC</span>
+          <span class="pay-chip">AMEX</span>
+          <span class="pay-chip"><i class="bi bi-paypal"></i>PayPal</span>
+          <span class="pay-chip"><i class="bi bi-apple"></i>Pay</span>
+          <span class="pay-chip"><i class="bi bi-google"></i>Pay</span>
+          <span class="pay-chip">Klarna</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile dock -->
+  <nav class="mobile-dock d-lg-none" aria-label="Quick navigation">
+    <a href="index.html" class="active" aria-current="page"><i class="bi bi-house"></i><span>Home</span></a>
+    <a href="products.html"><i class="bi bi-grid"></i><span>Shop</span></a>
+    <a href="#"><i class="bi bi-heart"></i><span>Wishlist</span><span class="count-badge" data-wish-count data-empty="true">0</span></a>
+    <a href="cart.html"><i class="bi bi-bag"></i><span>Cart</span><span class="count-badge" data-cart-count data-empty="true">0</span></a>
+    <a href="order-success.html"><i class="bi bi-person"></i><span>Account</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

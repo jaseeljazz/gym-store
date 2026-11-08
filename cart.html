@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your cart · IRON & PULSE</title>
+  <meta name="description" content="Review the equipment in your cart, apply a promo code and check out.">
+  <meta name="theme-color" content="#ffffff">
+  <script>try{var t=localStorage.getItem('ip-theme-v2');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+      <p class="mb-0 text-truncate announce-text"><i class="bi bi-truck me-2" aria-hidden="true"></i>Free shipping on orders over $150. <a href="products.html">Shop equipment</a></p>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <a href="#" class="d-none d-md-inline">Help</a>
+        <label class="visually-hidden" for="currency-top">Currency</label>
+        <select id="currency-top" class="form-select form-select-sm" data-currency>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="QAR">QAR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / navigation -->
+  <nav class="navbar navbar-expand-lg ip-nav sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="IRON &amp; PULSE home">
+        <span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE
+      </a>
+
+      <div class="d-flex align-items-center gap-1 order-lg-3 ms-auto ms-lg-0">
+        <button class="icon-btn d-none d-sm-inline-grid" type="button" data-theme-toggle aria-label="Switch theme"><i class="bi bi-sun"></i></button>
+        <a class="icon-btn d-none d-sm-inline-grid" href="#" aria-label="Wishlist" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Wishlist">
+          <i class="bi bi-heart"></i><span class="count-badge" data-wish-count data-empty="true">0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="Cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
+          <i class="bi bi-bag"></i><span class="count-badge" data-cart-count data-empty="true">0</span>
+        </a>
+        <div class="dropdown d-none d-sm-block">
+          <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu"><i class="bi bi-person-circle"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><h6 class="dropdown-header">Signed in as Alex Rivera</h6></li>
+            <li><a class="dropdown-item" href="order-success.html"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+        <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=racks"><i class="bi bi-grid-3x3 me-2"></i>Racks &amp; Rigs</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=dumbbells"><i class="bi bi-hexagon me-2"></i>Dumbbells &amp; Barbells</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=cardio"><i class="bi bi-heart-pulse me-2"></i>Cardio Equipment</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=benches"><i class="bi bi-layout-sidebar me-2"></i>Benches</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=recovery"><i class="bi bi-bandaid me-2"></i>Recovery &amp; Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All equipment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#commercial">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        </ul>
+        <form class="nav-search me-lg-3 mb-3 mb-lg-0" role="search" data-search>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="site-search">Search equipment</label>
+          <input id="site-search" class="form-control" type="search" placeholder="Search racks, bars, bikes…" autocomplete="off">
+        </form>
+        <div class="d-flex gap-2 d-sm-none pb-3">
+          <button class="btn btn-ip-ghost btn-sm" type="button" data-theme-toggle><i class="bi bi-sun"></i></button>
+          <a class="btn btn-ip-ghost btn-sm flex-grow-1" href="#"><i class="bi bi-person-circle me-1"></i>Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-banner" aria-labelledby="cart-title">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+          </ol>
+        </nav>
+        <h1 id="cart-title">Shopping Cart <span class="text-muted fs-4 fw-semibold" id="cartCountLabel">(3 items)</span></h1>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="row g-4 g-xl-5" id="cartLayout">
+          <!-- Items -->
+          <div class="col-lg-8">
+            <div class="cart-head" aria-hidden="true">
+              <span>Product</span><span>Price</span><span>Quantity</span><span class="text-end">Subtotal</span><span></span>
+            </div>
+            <div id="cartItems" aria-live="polite"></div>
+
+            <div class="empty-state d-none" id="cartEmpty">
+              <i class="bi bi-bag"></i>
+              <h2 class="h4 mt-3">Your cart is empty</h2>
+              <p class="text-muted mx-auto">Start with a rack or a set of dumbbells and build from there.</p>
+              <a href="products.html" class="btn btn-ip">Shop equipment</a>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-between gap-3 mt-4" id="cartActions">
+              <a href="products.html" class="btn btn-ip-ghost"><i class="bi bi-arrow-left me-2"></i>Continue Shopping</a>
+              <button class="btn btn-link text-muted" type="button" data-bs-toggle="modal" data-bs-target="#clearModal"><i class="bi bi-trash3 me-2"></i>Clear Cart</button>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <aside class="col-lg-4" aria-labelledby="sum-title" id="summaryCol">
+            <div class="sticky-buy">
+              <div class="ip-card ip-card-pad">
+                <h2 class="h4 mb-3" id="sum-title">Order summary</h2>
+                <div class="free-ship" id="freeShip"></div>
+
+                <div class="summary-line"><span>Subtotal</span><span id="sSub">$0.00</span></div>
+                <div class="summary-line d-none" id="sDiscRow"><span>Discount <span class="tag tag-success ms-1" id="sPromoTag"></span></span><span class="text-accent" id="sDisc">−$0.00</span></div>
+                <div class="summary-line"><span>Estimated shipping</span><span id="sShip">$0.00</span></div>
+                <div class="summary-line"><span>Estimated tax (8%)</span><span id="sTax">$0.00</span></div>
+
+                <form class="mt-3" id="zipForm" novalidate>
+                  <label class="form-label small text-muted" for="zip">Delivery estimate</label>
+                  <div class="input-group">
+                    <input class="form-control" id="zip" inputmode="numeric" maxlength="5" pattern="[0-9]{5}" placeholder="ZIP code" autocomplete="postal-code">
+                    <button class="btn btn-ip-ghost" type="submit">Check</button>
+                  </div>
+                  <div class="promo-msg" id="zipMsg" aria-live="polite"></div>
+                </form>
+
+                <form class="mt-2" id="promoForm" novalidate>
+                  <label class="form-label small text-muted" for="promo">Promo code</label>
+                  <div class="input-group">
+                    <input class="form-control text-uppercase" id="promo" placeholder="Try IRON10" autocomplete="off">
+                    <button class="btn btn-ip-ghost" type="submit">Apply</button>
+                  </div>
+                  <div class="promo-msg" id="promoMsg" aria-live="polite"></div>
+                </form>
+
+                <div class="summary-total"><span class="fw-semibold">Total</span><strong id="sTotal">$0.00</strong></div>
+                <a href="checkout.html" class="btn btn-ip btn-lg w-100 mt-3" id="checkoutBtn"><i class="bi bi-lock-fill me-2"></i>Proceed to Checkout</a>
+                <p class="small text-muted text-center mt-2 mb-0">Or pay over time with <strong>Klarna</strong> at checkout</p>
+              </div>
+
+              <div class="trust-row">
+                <div class="trust"><i class="bi bi-shield-lock"></i>256-bit SSL checkout</div>
+                <div class="trust"><i class="bi bi-arrow-counterclockwise"></i>30-day free returns</div>
+                <div class="trust"><i class="bi bi-patch-check"></i>5-year warranty</div>
+              </div>
+              <div class="d-flex flex-wrap justify-content-center gap-2 mt-3" aria-label="Accepted payment methods">
+                <span class="pay-chip">VISA</span><span class="pay-chip">MC</span><span class="pay-chip">AMEX</span>
+                <span class="pay-chip"><i class="bi bi-paypal"></i></span><span class="pay-chip"><i class="bi bi-apple"></i></span><span class="pay-chip"><i class="bi bi-google"></i></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Clear cart confirm -->
+  <div class="modal fade" id="clearModal" tabindex="-1" aria-labelledby="clearModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-body p-4">
+          <h2 class="h5" id="clearModalLabel">Remove everything from your cart?</h2>
+          <p class="text-muted small mb-0">Your promo code will be removed too. Saved wishlist items stay saved.</p>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-ip-ghost" data-bs-dismiss="modal">Keep items</button>
+          <button type="button" class="btn btn-ip" id="confirmClear">Clear cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="brand mb-3" href="index.html"><span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE</a>
+          <p class="text-muted mb-4">Commercial-grade strength and cardio equipment for home gyms, garages and training facilities. Designed in Austin, built to outlast you.</p>
+          <div class="social d-flex gap-2">
+            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="products.html?cat=racks">Racks &amp; Rigs</a></li>
+            <li><a href="products.html?cat=dumbbells">Dumbbells &amp; Barbells</a></li>
+            <li><a href="products.html?cat=cardio">Cardio</a></li>
+            <li><a href="products.html?cat=recovery">Recovery</a></li>
+            <li><a href="products.html">All equipment</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="order-success.html">Track an order</a></li>
+            <li><a href="#">Shipping &amp; delivery</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Warranty claims</a></li>
+            <li><a href="#">Assembly service</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="index.html#commercial">Commercial sales</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <h4>Talk to us</h4>
+          <ul>
+            <li><a href="tel:+18005550199"><i class="bi bi-telephone me-2"></i>1-800-555-0199</a></li>
+            <li><a href="mailto:hello@ironandpulse.com"><i class="bi bi-envelope me-2"></i>Email support</a></li>
+            <li class="text-muted small">Mon–Sat, 8am–8pm CT</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <span>© <span data-year>2026</span> IRON &amp; PULSE Inc. All rights reserved. · <a href="#" class="text-muted">Privacy</a> · <a href="#" class="text-muted">Terms</a></span>
+        <div class="d-flex flex-wrap gap-2" aria-label="Accepted payment methods">
+          <span class="pay-chip">VISA</span>
+          <span class="pay-chip">MC</span>
+          <span class="pay-chip">AMEX</span>
+          <span class="pay-chip"><i class="bi bi-paypal"></i>PayPal</span>
+          <span class="pay-chip"><i class="bi bi-apple"></i>Pay</span>
+          <span class="pay-chip"><i class="bi bi-google"></i>Pay</span>
+          <span class="pay-chip">Klarna</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile dock -->
+  <nav class="mobile-dock d-lg-none" aria-label="Quick navigation">
+    <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
+    <a href="products.html"><i class="bi bi-grid"></i><span>Shop</span></a>
+    <a href="#"><i class="bi bi-heart"></i><span>Wishlist</span><span class="count-badge" data-wish-count data-empty="true">0</span></a>
+    <a href="cart.html" class="active" aria-current="page"><i class="bi bi-bag"></i><span>Cart</span><span class="count-badge" data-cart-count data-empty="true">0</span></a>
+    <a href="order-success.html"><i class="bi bi-person"></i><span>Account</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const list = document.getElementById('cartItems');
+      const $ = (id) => document.getElementById(id);
+
+      function row(item, idx) {
+        const sub = item.price * item.qty;
+        return `
+          <div class="cart-row" data-idx="${idx}">
+            <a href="product-detail.html?id=${item.id}"><img class="cart-thumb" src="${item.img}" alt="${IP.escapeHtml(item.name)}" loading="lazy"></a>
+            <div class="cart-info">
+              <h3><a href="product-detail.html?id=${item.id}">${IP.escapeHtml(item.name)}</a></h3>
+              <div class="spec">${IP.escapeHtml(item.spec)}</div>
+              <div class="small text-accent mt-1"><i class="bi bi-check-circle-fill me-1"></i>In stock, ships tomorrow</div>
+            </div>
+            <div class="cart-controls">
+              <span class="cart-unit" data-price="${item.price}">${IP.fmt(item.price)}</span>
+              <div class="qty qty-sm">
+                <button type="button" data-act="dec" aria-label="Decrease quantity of ${IP.escapeHtml(item.name)}" ${item.qty <= 1 ? 'disabled' : ''}><i class="bi bi-dash"></i></button>
+                <input type="number" min="1" max="99" value="${item.qty}" inputmode="numeric" aria-label="Quantity of ${IP.escapeHtml(item.name)}" data-act="set">
+                <button type="button" data-act="inc" aria-label="Increase quantity of ${IP.escapeHtml(item.name)}" ${item.qty >= 99 ? 'disabled' : ''}><i class="bi bi-plus"></i></button>
+              </div>
+              <span class="cart-sub text-md-end" data-price="${sub}">${IP.fmt(sub)}</span>
+              <button class="trash-btn" type="button" data-act="remove" aria-label="Remove ${IP.escapeHtml(item.name)}" data-bs-toggle="tooltip" data-bs-title="Remove"><i class="bi bi-trash3"></i></button>
+            </div>
+          </div>`;
+      }
+
+      function render() {
+        const cart = IP.getCart();
+        const t = IP.totals(cart, 'standard');
+        const empty = cart.length === 0;
+
+        document.querySelectorAll('.tooltip').forEach((el) => el.remove());
+        list.innerHTML = cart.map(row).join('');
+        list.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((el) => new bootstrap.Tooltip(el));
+        $('cartEmpty').classList.toggle('d-none', !empty);
+        $('cartActions').classList.toggle('d-none', empty);
+        document.querySelector('.cart-head').classList.toggle('invisible', empty);
+        $('summaryCol').classList.toggle('opacity-50', empty);
+        $('checkoutBtn').classList.toggle('disabled', empty);
+        $('checkoutBtn').setAttribute('aria-disabled', empty ? 'true' : 'false');
+        $('cartCountLabel').textContent = `(${t.count} ${t.count === 1 ? 'item' : 'items'})`;
+
+        $('sSub').textContent = IP.fmt(t.subtotal);
+        $('sDiscRow').classList.toggle('d-none', !t.promo);
+        if (t.promo) { $('sDisc').textContent = '−' + IP.fmt(t.discount); $('sPromoTag').textContent = t.promo.code; }
+        $('sShip').textContent = t.shipping === 0 ? (empty ? IP.fmt(0) : 'Free') : IP.fmt(t.shipping);
+        $('sTax').textContent = IP.fmt(t.tax);
+        $('sTotal').textContent = IP.fmt(t.total);
+
+        const remaining = IP.FREE_SHIP_AT - (t.subtotal - t.discount);
+        const pct = Math.min(100, ((t.subtotal - t.discount) / IP.FREE_SHIP_AT) * 100);
+        $('freeShip').innerHTML = empty ? '' : remaining > 0
+          ? `<div class="mb-2">Add <strong>${IP.fmt(remaining)}</strong> more for free shipping</div><div class="progress" role="progressbar" aria-label="Progress to free shipping" aria-valuenow="${Math.round(pct)}" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" style="width:${pct}%"></div></div>`
+          : '<span class="text-accent"><i class="bi bi-truck me-1"></i>Your order ships free</span>';
+
+        if (t.promo) { $('promo').value = t.promo.code; }
+      }
+
+      function mutate(idx, fn) {
+        const cart = IP.getCart();
+        if (!cart[idx]) return;
+        fn(cart, cart[idx]);
+        IP.saveCart(cart);
+        render();
+      }
+
+      list.addEventListener('click', (e) => {
+        const btn = e.target.closest('[data-act]');
+        if (!btn || btn.tagName === 'INPUT') return;
+        const idx = Number(btn.closest('.cart-row').dataset.idx);
+        const act = btn.dataset.act;
+        if (act === 'inc') mutate(idx, (c, i) => { i.qty = Math.min(99, i.qty + 1); });
+        if (act === 'dec') mutate(idx, (c, i) => { i.qty = Math.max(1, i.qty - 1); });
+        if (act === 'remove') {
+          const name = IP.getCart()[idx].name;
+          mutate(idx, (c) => { c.splice(idx, 1); });
+          IP.toast(`Removed <strong>${IP.escapeHtml(name)}</strong> from your cart`);
+        }
+      });
+      list.addEventListener('change', (e) => {
+        if (e.target.dataset.act !== 'set') return;
+        const idx = Number(e.target.closest('.cart-row').dataset.idx);
+        const v = Math.min(99, Math.max(1, parseInt(e.target.value, 10) || 1));
+        mutate(idx, (c, i) => { i.qty = v; });
+      });
+
+      $('confirmClear').addEventListener('click', () => {
+        IP.saveCart([]);
+        IP.LS.remove('ip-promo');
+        $('promo').value = '';
+        $('promoMsg').textContent = '';
+        bootstrap.Modal.getInstance($('clearModal')).hide();
+        render();
+      });
+
+      $('promoForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const code = $('promo').value.trim().toUpperCase();
+        const msg = $('promoMsg');
+        if (!code) { msg.className = 'promo-msg err'; msg.textContent = 'Enter a promo code first.'; return; }
+        if (IP.PROMOS[code]) {
+          IP.LS.set('ip-promo', code);
+          msg.className = 'promo-msg ok';
+          msg.innerHTML = `<i class="bi bi-check-circle-fill me-1"></i>${IP.PROMOS[code].pct}% off applied to your order.`;
+        } else {
+          IP.LS.remove('ip-promo');
+          msg.className = 'promo-msg err';
+          msg.textContent = `“${code}” isn't a valid code. Check the spelling or try IRON10.`;
+        }
+        render();
+      });
+
+      $('zipForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const zip = $('zip').value.trim();
+        const msg = $('zipMsg');
+        if (!/^\d{5}$/.test(zip)) { msg.className = 'promo-msg err'; msg.textContent = 'Enter a 5-digit ZIP code.'; return; }
+        const metro = Number(zip[0]) % 2 === 0;
+        const d = new Date();
+        d.setDate(d.getDate() + (metro ? 1 : 3));
+        msg.className = 'promo-msg ok';
+        msg.innerHTML = `<i class="bi bi-truck me-1"></i>Arrives by <strong>${d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}</strong> to ${zip}`;
+      });
+
+      $('checkoutBtn').addEventListener('click', (e) => { if (IP.getCart().length === 0) e.preventDefault(); });
+      document.addEventListener('ip:currency', render);
+      render();
+    })();
+  </script>
+</body>
+</html>

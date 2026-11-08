@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout · IRON & PULSE</title>
+  <meta name="description" content="Enter shipping and payment details to place your IRON & PULSE order.">
+  <meta name="theme-color" content="#ffffff">
+  <script>try{var t=localStorage.getItem('ip-theme-v2');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-bs-theme',t)}catch(e){}</script>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="container d-flex align-items-center justify-content-between gap-3">
+      <p class="mb-0 text-truncate announce-text"><i class="bi bi-truck me-2" aria-hidden="true"></i>Free shipping on orders over $150. <a href="products.html">Shop equipment</a></p>
+      <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        <a href="#" class="d-none d-md-inline">Help</a>
+        <label class="visually-hidden" for="currency-top">Currency</label>
+        <select id="currency-top" class="form-select form-select-sm" data-currency>
+          <option value="USD">USD $</option>
+          <option value="EUR">EUR €</option>
+          <option value="GBP">GBP £</option>
+          <option value="QAR">QAR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / navigation -->
+  <nav class="navbar navbar-expand-lg ip-nav sticky-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html" aria-label="IRON &amp; PULSE home">
+        <span class="brand-mark"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>IRON &amp; PULSE
+      </a>
+
+      <div class="d-flex align-items-center gap-1 order-lg-3 ms-auto ms-lg-0">
+        <button class="icon-btn d-none d-sm-inline-grid" type="button" data-theme-toggle aria-label="Switch theme"><i class="bi bi-sun"></i></button>
+        <a class="icon-btn d-none d-sm-inline-grid" href="#" aria-label="Wishlist" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Wishlist">
+          <i class="bi bi-heart"></i><span class="count-badge" data-wish-count data-empty="true">0</span>
+        </a>
+        <a class="icon-btn" href="cart.html" aria-label="Cart" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Cart">
+          <i class="bi bi-bag"></i><span class="count-badge" data-cart-count data-empty="true">0</span>
+        </a>
+        <div class="dropdown d-none d-sm-block">
+          <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account menu"><i class="bi bi-person-circle"></i></button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><h6 class="dropdown-header">Signed in as Alex Rivera</h6></li>
+            <li><a class="dropdown-item" href="order-success.html"><i class="bi bi-box-seam me-2"></i>My orders</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-heart me-2"></i>Wishlist</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i>Account settings</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+        <button class="icon-btn d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Open menu">
+          <i class="bi bi-list fs-3"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+        <ul class="navbar-nav mx-lg-auto mb-3 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html?cat=racks"><i class="bi bi-grid-3x3 me-2"></i>Racks &amp; Rigs</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=dumbbells"><i class="bi bi-hexagon me-2"></i>Dumbbells &amp; Barbells</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=cardio"><i class="bi bi-heart-pulse me-2"></i>Cardio Equipment</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=benches"><i class="bi bi-layout-sidebar me-2"></i>Benches</a></li>
+              <li><a class="dropdown-item" href="products.html?cat=recovery"><i class="bi bi-bandaid me-2"></i>Recovery &amp; Accessories</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="products.html">All equipment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html#commercial">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        </ul>
+        <form class="nav-search me-lg-3 mb-3 mb-lg-0" role="search" data-search>
+          <i class="bi bi-search" aria-hidden="true"></i>
+          <label class="visually-hidden" for="site-search">Search equipment</label>
+          <input id="site-search" class="form-control" type="search" placeholder="Search racks, bars, bikes…" autocomplete="off">
+        </form>
+        <div class="d-flex gap-2 d-sm-none pb-3">
+          <button class="btn btn-ip-ghost btn-sm" type="button" data-theme-toggle><i class="bi bi-sun"></i></button>
+          <a class="btn btn-ip-ghost btn-sm flex-grow-1" href="#"><i class="bi bi-person-circle me-1"></i>Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-banner py-4" aria-label="Checkout progress">
+      <div class="container">
+        <ol class="steps" aria-label="Checkout steps">
+          <li class="done"><span class="dot"><i class="bi bi-check-lg"></i></span><a href="cart.html" class="step-label">Cart</a></li>
+          <li class="current" aria-current="step"><span class="dot">2</span><span class="step-label">Shipping &amp; Payment</span></li>
+          <li><span class="dot">3</span><span class="step-label">Confirmation</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="row g-4 g-xl-5">
+          <!-- Form -->
+          <div class="col-lg-7">
+            <h1 class="h2 mb-4">Checkout</h1>
+
+            <div class="ip-card ip-card-pad mb-4">
+              <h2 class="h5 mb-3">Express checkout</h2>
+              <div class="row g-2">
+                <div class="col-sm-6"><button type="button" class="btn express-btn express-apple" data-express="Apple Pay"><i class="bi bi-apple"></i>Pay</button></div>
+                <div class="col-sm-6"><button type="button" class="btn express-btn express-google" data-express="Google Pay"><i class="bi bi-google"></i>Pay</button></div>
+              </div>
+              <div class="or-divider mb-0">or enter your details below</div>
+            </div>
+
+            <form id="checkoutForm" class="needs-validation" novalidate>
+              <!-- Shipping address -->
+              <div class="ip-card ip-card-pad mb-4">
+                <h2 class="h5 mb-3">Shipping address</h2>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="fullName">Full name</label>
+                    <input class="form-control" id="fullName" autocomplete="name" required value="Alex Rivera">
+                    <div class="invalid-feedback">Enter the name for delivery.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" type="email" autocomplete="email" required value="alex.rivera@example.com">
+                    <div class="invalid-feedback">Enter an email like name@example.com.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="address">Street address</label>
+                    <input class="form-control" id="address" autocomplete="street-address" required placeholder="1200 Barton Springs Rd, Apt 4">
+                    <div class="invalid-feedback">Enter the street address for delivery.</div>
+                  </div>
+                  <div class="col-md-5">
+                    <label class="form-label" for="city">City</label>
+                    <input class="form-control" id="city" autocomplete="address-level2" required placeholder="Austin">
+                    <div class="invalid-feedback">Enter a city.</div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <label class="form-label" for="zipCode">ZIP</label>
+                    <input class="form-control" id="zipCode" autocomplete="postal-code" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" required placeholder="78704">
+                    <div class="invalid-feedback">Use 5 digits.</div>
+                  </div>
+                  <div class="col-6 col-md-4">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input class="form-control" id="phone" type="tel" autocomplete="tel" required placeholder="(512) 555-0142" pattern="[0-9()+\-\s]{10,}">
+                    <div class="invalid-feedback">Enter a phone number so the driver can call.</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Shipping method -->
+              <div class="ip-card ip-card-pad mb-4">
+                <h2 class="h5 mb-3">Shipping method</h2>
+                <div class="d-grid gap-2" role="radiogroup" aria-label="Shipping method">
+                  <label class="ship-option" for="shipStd">
+                    <input class="form-check-input" type="radio" name="ship" id="shipStd" value="standard" checked>
+                    <span><strong class="d-block">Standard Ground</strong><span class="small text-muted" id="stdEta">3–5 business days, curbside</span></span>
+                    <span class="price" id="stdPrice">Free</span>
+                  </label>
+                  <label class="ship-option" for="shipExp">
+                    <input class="form-check-input" type="radio" name="ship" id="shipExp" value="express">
+                    <span><strong class="d-block">Express Next-Day</strong><span class="small text-muted" id="expEta">Order by 2pm, delivered tomorrow</span></span>
+                    <span class="price" data-price="39">$39.00</span>
+                  </label>
+                </div>
+                <div class="form-check mt-3">
+                  <input class="form-check-input" type="checkbox" id="assembly">
+                  <label class="form-check-label" for="assembly">Add white-glove assembly (<span data-price="149">$149.00</span>)</label>
+                </div>
+              </div>
+
+              <!-- Payment -->
+              <div class="ip-card ip-card-pad mb-4">
+                <h2 class="h5 mb-3">Payment</h2>
+                <ul class="nav pay-tabs mb-4" id="payTabs" role="tablist">
+                  <li class="nav-item" role="presentation"><button class="nav-link active" id="card-tab" data-bs-toggle="tab" data-bs-target="#card-pane" type="button" role="tab" aria-controls="card-pane" aria-selected="true" data-method="card"><i class="bi bi-credit-card"></i>Card</button></li>
+                  <li class="nav-item" role="presentation"><button class="nav-link" id="paypal-tab" data-bs-toggle="tab" data-bs-target="#paypal-pane" type="button" role="tab" aria-controls="paypal-pane" aria-selected="false" data-method="paypal"><i class="bi bi-paypal"></i>PayPal</button></li>
+                  <li class="nav-item" role="presentation"><button class="nav-link" id="klarna-tab" data-bs-toggle="tab" data-bs-target="#klarna-pane" type="button" role="tab" aria-controls="klarna-pane" aria-selected="false" data-method="klarna"><i class="bi bi-calendar2-check"></i>Financing</button></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="card-pane" role="tabpanel" aria-labelledby="card-tab" tabindex="0">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <label class="form-label" for="cardNumber">Card number</label>
+                        <div class="card-field">
+                          <input class="form-control" id="cardNumber" inputmode="numeric" autocomplete="cc-number" placeholder="1234 5678 9012 3456" maxlength="19" required data-card>
+                          <i class="bi bi-credit-card-2-front brand-ic" id="cardBrand" aria-hidden="true"></i>
+                          <div class="invalid-feedback">Enter the 15 or 16 digits on your card.</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label class="form-label" for="cardName">Name on card</label>
+                        <input class="form-control" id="cardName" autocomplete="cc-name" required data-card placeholder="Alex Rivera">
+                        <div class="invalid-feedback">Enter the name exactly as printed on the card.</div>
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label" for="cardExp">Expiry</label>
+                        <input class="form-control" id="cardExp" inputmode="numeric" autocomplete="cc-exp" placeholder="MM/YY" maxlength="5" required data-card>
+                        <div class="invalid-feedback">Use MM/YY with a future date.</div>
+                      </div>
+                      <div class="col-6">
+                        <label class="form-label" for="cardCvv">CVV <i class="bi bi-question-circle text-muted" data-bs-toggle="tooltip" data-bs-title="3 digits on the back, or 4 on the front for Amex" tabindex="0" aria-label="CVV help"></i></label>
+                        <input class="form-control" id="cardCvv" inputmode="numeric" autocomplete="cc-csc" placeholder="123" maxlength="4" pattern="[0-9]{3,4}" required data-card>
+                        <div class="invalid-feedback">Enter the 3 or 4 digit code.</div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="sameBilling" checked>
+                          <label class="form-check-label" for="sameBilling">Billing address is the same as shipping</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="paypal-pane" role="tabpanel" aria-labelledby="paypal-tab" tabindex="0">
+                    <div class="d-flex gap-3 align-items-start">
+                      <i class="bi bi-paypal fs-2 text-accent"></i>
+                      <p class="mb-0 text-muted">When you place your order you'll sign in to PayPal to approve the payment, then return here for your confirmation.</p>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="klarna-pane" role="tabpanel" aria-labelledby="klarna-tab" tabindex="0">
+                    <p class="text-muted">Split your order into payments. Approval takes about a minute and won't affect your credit score.</p>
+                    <div class="d-grid gap-2" role="radiogroup" aria-label="Financing plan">
+                      <label class="ship-option" for="plan4">
+                        <input class="form-check-input" type="radio" name="plan" id="plan4" value="4" checked>
+                        <span><strong class="d-block">4 interest-free payments</strong><span class="small text-muted">Every 2 weeks</span></span>
+                        <span class="price" id="plan4Amt">$0.00</span>
+                      </label>
+                      <label class="ship-option" for="plan12">
+                        <input class="form-check-input" type="radio" name="plan" id="plan12" value="12">
+                        <span><strong class="d-block">12 monthly payments</strong><span class="small text-muted">0% APR for qualified buyers</span></span>
+                        <span class="price" id="plan12Amt">$0.00</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="terms" required>
+                <label class="form-check-label" for="terms">I agree to the <a href="#" class="text-accent">terms of sale</a> and <a href="#" class="text-accent">return policy</a></label>
+                <div class="invalid-feedback">Accept the terms to place your order.</div>
+              </div>
+              <button class="btn btn-ip btn-lg w-100 d-lg-none" type="submit"><i class="bi bi-lock-fill me-2"></i>Place Order · <span class="js-total">$0.00</span></button>
+            </form>
+          </div>
+
+          <!-- Summary -->
+          <aside class="col-lg-5" aria-labelledby="co-sum-title">
+            <div class="sticky-buy">
+              <div class="ip-card ip-card-pad">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h2 class="h4 mb-0" id="co-sum-title">Order summary</h2>
+                  <a href="cart.html" class="small text-accent fw-semibold">Edit cart</a>
+                </div>
+                <div id="miniItems"></div>
+                <hr class="divider">
+                <div class="summary-line"><span>Subtotal</span><span id="cSub">$0.00</span></div>
+                <div class="summary-line d-none" id="cDiscRow"><span>Discount <span class="tag tag-success ms-1" id="cPromo"></span></span><span class="text-accent" id="cDisc">−$0.00</span></div>
+                <div class="summary-line"><span>Shipping</span><span id="cShip">Free</span></div>
+                <div class="summary-line d-none" id="cAsmRow"><span>Assembly</span><span data-price="149">$149.00</span></div>
+                <div class="summary-line"><span>Tax (8%)</span><span id="cTax">$0.00</span></div>
+                <div class="summary-total"><span class="fw-semibold">Total</span><strong id="cTotal">$0.00</strong></div>
+                <button class="btn btn-ip btn-lg w-100 mt-3" type="submit" form="checkoutForm" id="placeOrder"><i class="bi bi-lock-fill me-2"></i>Place Order</button>
+                <div class="secure-note"><i class="bi bi-shield-lock"></i>Payments are encrypted and processed securely</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer pt-0">
+    <div class="container">
+      <div class="footer-bottom mt-0 d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© <span data-year>2026</span> IRON &amp; PULSE Inc. · <a href="#" class="text-muted">Privacy</a> · <a href="#" class="text-muted">Terms</a></span>
+        <span>Need help? <a href="tel:+18005550199" class="text-accent">1-800-555-0199</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile dock -->
+  <nav class="mobile-dock d-lg-none" aria-label="Quick navigation">
+    <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
+    <a href="products.html"><i class="bi bi-grid"></i><span>Shop</span></a>
+    <a href="#"><i class="bi bi-heart"></i><span>Wishlist</span><span class="count-badge" data-wish-count data-empty="true">0</span></a>
+    <a href="cart.html" class="active" aria-current="page"><i class="bi bi-bag"></i><span>Cart</span><span class="count-badge" data-cart-count data-empty="true">0</span></a>
+    <a href="order-success.html"><i class="bi bi-person"></i><span>Account</span></a>
+  </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      const $ = (id) => document.getElementById(id);
+      const form = $('checkoutForm');
+      let payMethod = 'card';
+
+      const shipMethod = () => (form.querySelector('input[name="ship"]:checked') || {}).value || 'standard';
+      const assembly = () => $('assembly').checked ? 149 : 0;
+      const dayLabel = (n) => { const d = new Date(); d.setDate(d.getDate() + n); return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }); };
+
+      function compute() {
+        const cart = IP.getCart();
+        const t = IP.totals(cart, shipMethod());
+        t.assembly = cart.length ? assembly() : 0;
+        t.total += t.assembly;
+        return { cart, t };
+      }
+
+      function render() {
+        const { cart, t } = compute();
+        $('miniItems').innerHTML = cart.length
+          ? cart.map((i) => `
+            <div class="mini-item">
+              <div class="mini-thumb"><img src="${i.img}" alt="" loading="lazy"><span class="q" aria-label="Quantity">${i.qty}</span></div>
+              <div><div class="t">${IP.escapeHtml(i.name)}</div><div class="s">${IP.escapeHtml(i.spec)}</div></div>
+              <span class="fw-semibold" data-price="${i.price * i.qty}">${IP.fmt(i.price * i.qty)}</span>
+            </div>`).join('')
+          : '<div class="empty-state py-4 mt-3"><p class="text-muted mx-auto mb-3">Your cart is empty.</p><a class="btn btn-ip btn-sm" href="products.html">Shop equipment</a></div>';
+
+        $('cSub').textContent = IP.fmt(t.subtotal);
+        $('cDiscRow').classList.toggle('d-none', !t.promo);
+        if (t.promo) { $('cPromo').textContent = t.promo.code; $('cDisc').textContent = '−' + IP.fmt(t.discount); }
+        $('cShip').textContent = t.shipping === 0 ? 'Free' : IP.fmt(t.shipping);
+        $('cAsmRow').classList.toggle('d-none', !t.assembly);
+        $('cTax').textContent = IP.fmt(t.tax);
+        $('cTotal').textContent = IP.fmt(t.total);
+        document.querySelectorAll('.js-total').forEach((el) => { el.textContent = IP.fmt(t.total); });
+        $('placeOrder').innerHTML = `<i class="bi bi-lock-fill me-2"></i>Place Order · ${IP.fmt(t.total)}`;
+
+        const std = IP.totals(cart, 'standard');
+        $('stdPrice').textContent = std.shipping === 0 ? 'Free' : IP.fmt(std.shipping);
+        $('stdEta').textContent = `Arrives ${dayLabel(3)}–${dayLabel(5)}, curbside`;
+        $('expEta').textContent = `Order by 2pm, arrives ${dayLabel(1)}`;
+        $('plan4Amt').textContent = IP.fmt(t.total / 4) + ' × 4';
+        $('plan12Amt').textContent = IP.fmt(t.total / 12) + '/mo';
+        IP.applyPrices();
+      }
+
+      // Payment tab switching toggles which fields are required
+      document.querySelectorAll('#payTabs [data-bs-toggle="tab"]').forEach((tab) => {
+        tab.addEventListener('shown.bs.tab', () => {
+          payMethod = tab.dataset.method;
+          form.querySelectorAll('[data-card]').forEach((f) => { f.required = payMethod === 'card'; });
+          if (payMethod === 'card') { num.dispatchEvent(new Event('input')); exp.dispatchEvent(new Event('input')); }
+          else { num.setCustomValidity(''); exp.setCustomValidity(''); }
+        });
+      });
+
+      // Card input formatting
+      const num = $('cardNumber');
+      num.addEventListener('input', () => {
+        const digits = num.value.replace(/\D/g, '').slice(0, 16);
+        num.value = digits.replace(/(.{4})/g, '$1 ').trim();
+        const brand = /^3[47]/.test(digits) ? 'AMEX' : /^4/.test(digits) ? 'VISA' : /^5[1-5]/.test(digits) ? 'MC' : '';
+        const ic = $('cardBrand');
+        ic.className = 'brand-ic ' + (brand ? 'small fw-bold' : 'bi bi-credit-card-2-front');
+        ic.textContent = brand;
+        num.setCustomValidity(digits.length === 15 || digits.length === 16 ? '' : 'invalid');
+      });
+      const exp = $('cardExp');
+      exp.addEventListener('input', () => {
+        let v = exp.value.replace(/\D/g, '').slice(0, 4);
+        if (v.length >= 3) v = v.slice(0, 2) + '/' + v.slice(2);
+        exp.value = v;
+        const m = /^(\d{2})\/(\d{2})$/.exec(v);
+        let ok = false;
+        if (m) {
+          const mm = Number(m[1]); const yy = 2000 + Number(m[2]);
+          const now = new Date();
+          ok = mm >= 1 && mm <= 12 && (yy > now.getFullYear() || (yy === now.getFullYear() && mm >= now.getMonth() + 1));
+        }
+        exp.setCustomValidity(ok ? '' : 'invalid');
+      });
+      $('cardCvv').addEventListener('input', (e) => { e.target.value = e.target.value.replace(/\D/g, '').slice(0, 4); });
+      $('zipCode').addEventListener('input', (e) => { e.target.value = e.target.value.replace(/\D/g, '').slice(0, 5); });
+      num.setCustomValidity('invalid');
+      exp.setCustomValidity('invalid');
+
+      function placeOrder(paymentLabel, express) {
+        const { cart, t } = compute();
+        if (!cart.length) { IP.toast('Add something to your cart before checking out.'); return; }
+        const val = (id) => $(id).value.trim();
+        const order = {
+          number: 'IP-98402',
+          placedAt: Date.now(),
+          items: cart,
+          totals: t,
+          method: shipMethod(),
+          payment: paymentLabel,
+          customer: express
+            ? { name: 'Alex Rivera', email: 'alex.rivera@example.com', address: '1200 Barton Springs Rd, Apt 4', city: 'Austin', zip: '78704', phone: '(512) 555-0142' }
+            : { name: val('fullName'), email: val('email'), address: val('address'), city: val('city'), zip: val('zipCode'), phone: val('phone') }
+        };
+        IP.LS.set('ip-last-order', order);
+        IP.saveCart([]);
+        IP.LS.remove('ip-promo');
+        window.location.href = 'order-success.html';
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        form.classList.add('was-validated');
+        if (!form.checkValidity()) {
+          const first = form.querySelector(':invalid');
+          if (first) { first.scrollIntoView({ behavior: 'smooth', block: 'center' }); first.focus({ preventScroll: true }); }
+          return;
+        }
+        let label = 'PayPal';
+        if (payMethod === 'card') {
+          const digits = num.value.replace(/\D/g, '');
+          const brand = $('cardBrand').textContent || 'Card';
+          label = `${brand} ending ${digits.slice(-4)}`;
+        } else if (payMethod === 'klarna') {
+          label = form.querySelector('input[name="plan"]:checked').value === '4' ? 'Klarna · 4 payments' : 'Klarna · 12 months';
+        }
+        placeOrder(label, false);
+      });
+
+      document.querySelectorAll('[data-express]').forEach((b) => b.addEventListener('click', () => placeOrder(b.dataset.express, true)));
+      form.addEventListener('change', (e) => { if (e.target.name === 'ship' || e.target.id === 'assembly') render(); });
+      document.addEventListener('ip:currency', render);
+      render();
+    })();
+  </script>
+</body>
+</html>
